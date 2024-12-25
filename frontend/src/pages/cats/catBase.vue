@@ -201,14 +201,14 @@
                 color="indigo-lighten-2"
                 rounded="lg"
                 variant="elevated"
-                @click="showPositionEdit = true; positionEditCat = cat"
+                @click="()=>{showPositionEdit = true ; positionEditCat = cat}"
                 v-if="user.login && (user.is_superuser || user.is_volunteer)"
               >
               <v-icon left class="mr-1">mdi-map-marker-outline</v-icon> 更新位置
               </v-btn>
               <v-btn 
                 rounded="lg"
-                @click="showDeleteDialog = true ; removeCatId = cat.id" 
+                @click="showDeleteDialog = true, removeCatId = cat.id" 
                 v-if="isAdmin" 
                 variant="elevated"
                 color="#f8d6dd">
@@ -391,7 +391,7 @@
     <v-toolbar title="更新猫咪位置">
       <v-btn icon="mdi-close" @click="showPositionEdit = false"></v-btn>
     </v-toolbar>
-    <v-card>
+    <v-card v-if="positionEditCat">
       <MapChange
       :center="[positionEditCat.latest_longitude, positionEditCat.latest_latitude]"
       :zoom = 16.5
@@ -436,7 +436,7 @@ const showCatEdit = ref(false);
 const fileUrls = ref([])
 const health_condition = ref('')
 const showPositionEdit = ref(false);
-const positionEditCat = null;
+const positionEditCat = ref(null);
 
 const handleFiles = (event) => {
   const files = event.target.files;
@@ -761,10 +761,10 @@ const feedCat = (cat) => {
 
 import { getPublicProfile } from '@/api/user';
 import { fetchDonationTotal,fetchDonations } from '@/api/donate';
-// 最近三笔捐款
+
 const recentDonations = ref([]);
 const usernames = ref({});
-// 获取最近三笔捐款
+
 const loadRecentDonations = async () => {
   try {
     const donations = await fetchDonations(); 

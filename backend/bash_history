@@ -1,0 +1,213 @@
+    1  sudo apt upgrade -y
+    2  sudo apt upgrade
+    3  sudo apt install python3.11
+    4  git clone https://github.com/Verakinssd/2024BUAA_DB_Homework.git
+    5  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+    6  nvm
+    7  nvm install node
+    8  cd 2024BUAA_DB_Homework/frontend/
+    9  npm install pnpm
+   10  npm config set registry https://registry.npmmirror.com
+   11  npm install pnpm
+   12  npm install -g pnpm
+   13  pnpm install
+   14  cd ../backend/
+   15  ls
+   16  which python3
+   17  python3 --version
+   18  sudo vi ~/.bash_aliases
+   19  source ~/.bash_aliases 
+   20  pipenv install
+   21  python3 --version
+   22  cd 2024BUAA_DB_Homework/backend/
+   23  pip install pipenv
+   24  pipenv shell
+   25  pipenv install
+   26  fastapi dev
+   27  cd 2024BUAA_DB_Homework/frontend/
+   28  pnpm dev
+   29  pipenv install
+   30  sudo apt install mysql-server
+   31  mysql
+   32  mysql -uroot -p
+   33  fastapi dev
+   34  mysql
+   35  mysql -uroot -p
+   36  fastapi dev
+   37  pipenv shell
+   38  rm -rf ./.local/share/virtualenvs/root-BuDEOXnJ/
+   39  cd 2024BUAA_DB_Homework/backend/
+   40  pipenv install
+   41  pipenv shell
+   42  sudo apt install supervisor nginx -y
+   43  sudo systemctl enable supervisor
+   44  sudo systemctl start supervisor
+   45  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+   46  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+   47  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+   48  uvicorn
+   49  pipenv install gunivorn
+   50  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost
+   51  cd 2024BUAA_DB_Homework/
+   52  ls
+   53  cd backend/
+   54  ls
+   55  touch gunicorn_start
+   56  pwd
+   57  cd ~
+   58  ls
+   59  cdpwd
+   60  pwd
+   61  gunicorn
+   62  sudo apt install gunicorn
+   63  cd 2024BUAA_DB_Homework/backend/
+   64  ls
+   65  pipenv run gunicorn
+   66  gunicorn
+   67  chmod u+x gunicorn_start
+   68  mkdir run
+   69  mkdir logs
+   70  sudo vim /etc/supervisor/conf.d/BUAA_Cat_Management_System.conf
+   71  sudo supervisorctl reread
+   72  sudo supervisorctl update
+   73  sudo supervisorctl status BUAA_Cat_Management_System
+   74  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost
+   75  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost:8000
+   76  sudo supervisorctl restart BUAA_Cat_Management_System
+   77  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost:8000
+   78  sudo supervisorctl restart BUAA_Cat_Management_System
+   79  sudo supervisorctl status BUAA_Cat_Management_System
+   80  uvicorn
+   81  pipenv shell
+   82  pipenv install
+   83  pipenv install gunicorn
+   84  sudo supervisorctl restart BUAA_Cat_Management_System
+   85  sudo supervisorctl status BUAA_Cat_Management_System
+   86  pipenv run uvicorn main:app --host 0.0.0.0 --port 8000
+   87  pipenv run uvicorn app/main:app --host 0.0.0.0 --port 8000
+   88  pipenv shell
+   89  uvicorn app/main:app --host 0.0.0.0 --port 8000
+   90  uvicorn app.main:app --host 0.0.0.0 --port 8000
+   91  history
+   92  sudo supervisorctl reread
+   93  sudo supervisorctl update
+   94  sudo supervisorctl restart BUAA_Cat_Management_System
+   95  sudo supervisorctl status BUAA_Cat_Management_System
+   96  touch /etc/nginx/sites-available/BUAA_Cat_Management_System
+   97  sudo vim /etc/nginx/sites-available/BUAA_Cat_Management_System 
+   98  sudo ln -s /etc/nginx/sites-available/BUAA_Cat_Management_System /etc/nginx/sites-enabled/
+   99  sudo nginx -tsudo systemctl restart nginx
+  100  sudo nginx -t sudo systemctl restart nginx
+  101  sudo nginx -t
+  102  sudo systemctl restart nginx
+  103  sudo supervisorctl status BUAA_Cat_Management_System
+  104  history | grep 'curl'
+  105  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost:8000
+  106  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost:8000/docs
+  107  curl https://8.152.200.248
+  108  cat /etc/nginx/sites-available/BUAA_Cat_Management_System 
+  109  sudo ufw status
+  110  sudo ufw allow 80
+  111  curl http://8.152.200.248
+  112  sudo systemctl restart nginx
+  113  sudo nginx -t
+  114  sudo systemctl restart nginx
+  115  ps aux | grep gunicorn
+  116  curl http://8.152.200.248
+  117  curl http://localhost:8000
+  118  curl localhost:8000
+  119  sudo supervisorctl status BUAA_Cat_Management_System
+  120  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost:8000/docs
+  121  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock localhost:8000
+  122  sudo systemctl status nginx
+  123  sudo netstat -tuln | grep 80
+  124  sudo systemctl reload nginx
+  125  sudo netstat -tuln | grep 80
+  126  sudo systemctl status nginx
+  127  sudo ufw status
+  128  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost/
+  129  sudo chmod 666 /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock
+  130  curl -v http://8.152.200.248
+  131  curl -v http://localhost
+  167  ls -l /etc/nginx/sites-enabled/
+  168  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost
+  169  sudo rm /etc/nginx/sites-enabled/default
+  170  sudo systemctl reload nginx
+  171  sudo nginx -t
+  172  curl -v http://localhost
+  173  curl -v http://localhost:8000
+  174  curl -v http://8.152.200.248
+  175  cd 2024BUAA_DB_Homework/backend/
+  176  ./gunicorn_start
+  177  sudo supervisorctl reread
+  178  sudo supervisorctl update
+  179  chmod u+x gunicorn_start
+  180  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost
+  181  sudo systemctl reload nginx
+  182  sudo supervisorctl update
+  183  chmod u+x gunicorn_start
+  184  sudo supervisorctl reread
+  185  sudo supervisorctl update
+  186  sudo supervisorctl status BUAA_Cat_Management_System
+  187  sudo supervisorctl restart BUAA_Cat_Management_System
+  188  sudo supervisorctl status BUAA_Cat_Management_System
+  189  curl --unix-socket /home/fastapi-user/fastapi-nginx-gunicorn/run/gunicorn.sock localhost
+  190  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost
+  191  sudo nginx -t
+  192  ls -l /etc/nginx/sites-enabled/
+  193  sudo systemctl restart nginx
+  194  sudo systemctl status nginx
+  195  curl -v http://8.152.200.248
+  196  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+  197  cd ~
+  198  curl -v http://8.152.200.248
+  199  curl -v http://localhost
+  200  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost
+  201  sudo chmod 666 /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock
+  202  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost
+  203  cd 2024BUAA_DB_Homework/backend/
+  204  ls -l gunicorn_start 
+  205  sudo chown www-data:www-data gunicorn_start
+  206  ls -l gunicorn_start 
+  207  sudo usermod -aG root www-data
+  208  curl -v http://8.152.200.248
+  209  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+  210  curl -v http://8.152.200.248
+  211  sudo usermod -aG root www-data
+  212  ls -l gunicorn_start 
+  213  cd 2024BUAA_DB_Homework/backend/
+  214  sudo chown www-data:www-data gunicorn_start
+  215  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost
+  216  curl -v http://8.152.200.248
+  217  sudo lsof -U | grep gunicorn.sock
+  218  sudo supervisorctl status BUAA_Cat_Management_System
+  219  sudo nginx -t
+  220  sudo systemctl status nginx
+  221  curl -v http://localhost
+  222  ls -l /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock
+  223  curl --unix-socket /root/2024BUAA_DB_Homework/backend/run/gunicorn.sock http://localhost/
+  224  sudo supervisorctl restart BUAA_Cat_Management_System
+  225  sudo systemctl reload nginx
+  226  curl -v http://localhost
+  227  curl -v http://8.152.200.248
+  228  chmod 666 /run/gunicorn.sock
+  229  chmod 666 ./run/gunicorn.sock
+  230  ls -l ./run/gunicorn.sock 
+  231  chmod +x ./run/gunicorn.sock 
+  232  ls -l ./run/gunicorn.sock 
+  233  curl -v http://8.152.200.248
+  234  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+  235  cd 2024BUAA_DB_Homework/backend/
+  236  sudo chmod 0777 ./run/gunicorn.sock 
+  237  ls -l ./run/gunicorn.sock 
+  238  curl -v http://8.152.200.248
+  239  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.23.2024121901/python_files/deactivate/bash/envVars.txt
+  240  curl -v http://8.152.200.248
+  241  ps aux | grep "nginx: worker process" | awk'{print $1}'
+  242  awk
+  243  ps aux | grep "nginx: worker process" | awk '{print $1}'
+  244  sudo systemctl reload nginx
+  245  ps aux | grep "nginx: worker process" | awk '{print $1}'
+  246  curl -v http://8.152.200.248
+  247  curl -v http://8.152.200.248/docs
+  248  history > ./bash_history
