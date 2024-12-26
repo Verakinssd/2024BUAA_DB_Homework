@@ -11,7 +11,7 @@
     </v-toolbar>
     
     <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
-      <v-card variant="text" class="mr-2">
+      <v-card v-if="recentDonations.length" variant="text" class="mr-2">
         <v-card-title class="mt-2 d-flex justify-center align-center">
           <v-icon left>mdi-gift-outline</v-icon>
           最近捐赠一览
@@ -26,7 +26,6 @@
           <v-carousel-item
             v-for="(donation, index) in recentDonations"
             :key="index"
-            v-if="recentDonations.length"
           >
             <v-card
               variant="text"
