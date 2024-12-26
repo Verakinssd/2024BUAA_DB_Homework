@@ -26,6 +26,7 @@
           <v-carousel-item
             v-for="(donation, index) in recentDonations"
             :key="index"
+            v-if="recentDonations.length"
           >
             <v-card
               variant="text"
