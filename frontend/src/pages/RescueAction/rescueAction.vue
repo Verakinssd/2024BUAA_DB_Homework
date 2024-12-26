@@ -380,6 +380,13 @@ const removeActivity = async (id) => {
 };
 const signUpActivity = async (activity) => {
   // 报名
+  const now = new Date();
+  const signupStart = new Date(activity.signup_starts_at);
+  const signupEnd = new Date(activity.signup_ends_at);
+  if (now < signupStart || now > signupEnd) {
+    snackbar.error('不在报名时间段内，无法报名');
+    return;
+  }
   try {
     await signUp(activity.id , user.id);
     // 更新活动列表状态
@@ -410,7 +417,8 @@ const canSignUp = (activity) => {
   // 是否可以报名
   const condition1 = activity.max_participants > activity.current_participants;
   const condition2 = !applications.value.some(p => p.activity_id === activity.id);
-  return condition1 && condition2;
+  // const condition3 = activity.signupStartTime <= currentTime && currentTime <= activity.signupEndTime;
+  return condition1 && condition2; 
 };
 
 const canWithdraw = (activity) => {
